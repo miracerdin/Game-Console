@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: blue;
+}
+.container{
+    margin: 200px auto;
+    padding:40px 20px 20px;
+    width: 600px;
+    height: 250px;
+    background-color: red;
+    border-radius: 20px;
+    display: flex;
+    
+
+}
+/*left container */
+.left{
+    flex: 1.2;
+    background-color:  rgb(99, 212, 7);
+    border-radius: 5px;
+    position: relative;
+    
+
+
+}
+.square{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+   
+
+}
+.square-1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.square-2{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(-100%);
+    background-color: white;
+
+}
+.square-3{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(100%);
+    background-color: white;
+
+}
+.square-4{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translateY(-100%);
+    background-color: white;
+
+}
+.square-5{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translateY(100%);
+    background-color: white;
+
+}
+
+
+/*middle container */
+.middle{
+    flex: 1;
+    background-color:  rgb(99, 212, 7);
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.mid-item{
+    height: 40px;
+    background-color: gray;
+    margin-bottom: 10px;
+    
+}
+
+.mid-3{
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 900px;
+    color: brown;
+}
+.mid-4{
+    height: 60px;
+    border: 10px inset rgb(211, 199, 199);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn{
+    background-color: white;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 3px 10px rgb(90, 82, 82);
+}
+.mid-5{
+    margin-bottom: 0px;
+}
+
+/*Right container */
+.right{
+    flex: 1.2;
+    background-color: rgb(99, 212, 7);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.right-top{
+    flex: 1;
+    display: flex;
+    background-color: rgb(99, 212, 7);
+    justify-content: center;
+    align-items: center;
+
+}
+.right-top>p{
+    font-size: 24px;
+    font-weight: 900px;
+    border: 2px solid brown;
+    padding: 0 5px;
+    border-radius: 13px;
+}
+.right-bottom{
+    flex: 1;
+    background-color: rgb(99, 212, 7);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bottoms{
+
+    background-color: gray;
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    position: relative;
+}
+.circle{
+    
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: -3px -3px 3px white, 3px 3px 3px blue, -3px 3px 3px green; /*Başlangıç noktası sol alt.  ilk değer soldan sağa,ikinci yukardan aşağıya.*/
+
+}
+.bottoms p{
+    position: absolute;
+    left: 40%;
+    top:100%;
+}
